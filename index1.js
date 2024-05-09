@@ -1,15 +1,8 @@
-/**
- * @format
- */
-
-import {AppRegistry, Alert} from 'react-native';
-import firestore from "@react-native-firebase/firestore";
 import { createContext, useContext, useMemo, useReducer } from "react";
+import { Alert } from "react-native";
+import firestore from "@react-native-firebase/firestore";
 import auth from "@react-native-firebase/auth";
-import App from './App';
-import {name as appName} from './app.json';
 
-AppRegistry.registerComponent(appName, () => App);
 const MyContext = createContext()
 // displayName
 MyContext.displayName = "My Store";
